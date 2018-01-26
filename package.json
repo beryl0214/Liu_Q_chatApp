@@ -1,0 +1,24 @@
+{
+  "name": "chatApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beryl0214/chatApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/beryl0214/chatApp/issues"
+  },
+  "homepage": "https://github.com/beryl0214/chatApp",
+  "dependencies": {
+    "express": "^4.16.2",
+    "grunt": "^1.0.1"
+  }
+}
