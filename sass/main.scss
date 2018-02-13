@@ -1,0 +1,74 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// animation for the new messages
+@keyframes new-message {
+  0%   {left:0px;}
+  25%  {left:50px;}
+  50%  {left:50px;}
+  75%  {left:0px;}
+  100% {left:0px;}
+}
+
+@-webkit-keyframes new-message {
+  0%   {left:0px;}
+  25%  {left:50px;}
+  50%  {left:50px;}
+  75%  {left:0px;}
+  100% {left:0px;}
+}
+
+body {
+  font: 13px Helvetica, Arial;
+  background-color: black;
+
+  #messages {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding: 5px 10px;
+      position: relative;
+
+      // apply animation
+      &.new{
+        animation-name: new-message;
+        animation-duration: 1s;
+        -webkit-animation-name: new-message; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+      }
+    }
+  }
+
+  form {
+    background: #000;
+    padding: 3px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    input {
+      padding: 10px;
+      border: 0;
+      width: 90%;
+      margin-right: 0.5%;
+
+      &.nickname{
+        width: 200px;
+        margin-bottom: 10px;
+      }
+    }
+
+    button {
+      width: 9%;
+      background: rgb(130, 224, 255);
+      border: none;
+      padding: 10px;
+    }
+  }
+}

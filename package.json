@@ -1,24 +1,33 @@
 {
-  "name": "chatApp",
+  "name": "chatapp",
   "version": "1.0.0",
-  "description": "",
+  "description": "chat application for standalone and video project",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/beryl0214/chatApp.git"
+    "url": "git+https://github.com/Trevor-FanshaweC/chatApp.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "TVR",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/beryl0214/chatApp/issues"
-  },
-  "homepage": "https://github.com/beryl0214/chatApp",
   "dependencies": {
     "express": "^4.16.2",
-    "grunt": "^1.0.1"
-  }
+    "grunt-sass": "^2.1.0",
+    "node-sass": "^4.7.2",
+    "socket.io": "^2.0.4"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.2",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify-es": "git://github.com/gruntjs/grunt-contrib-uglify.git#harmony",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/Trevor-FanshaweC/chatApp/issues"
+  },
+  "homepage": "https://github.com/Trevor-FanshaweC/chatApp#readme"
 }
